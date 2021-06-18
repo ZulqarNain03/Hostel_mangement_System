@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignment3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment3">
+        <activity android:name=".Complaints_DetailsActivity"></activity>
+        <activity android:name=".Room_DetailsActivity" />
+        <activity android:name=".AddComplaints"
+            android:label="Fill complaint Form"
+            android:parentActivityName=".ComplaintsActivity"
+            />
+        <activity android:name=".ComplaintsActivity"
+            android:label=" complaints Form"
+            android:parentActivityName=".MainActivity" />
+            />
+        <activity
+            android:name=".AddRoom"
+            android:label="Fill Room condition Form"
+            android:parentActivityName=".RoomActivity" />
+        <activity
+            android:name=".RoomActivity"
+            android:label="Room Forms"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Applicant_DetailsActivity" />
+        <activity
+            android:name=".AddApplicant"
+            android:label="Add New registration"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label=" Registration List">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
